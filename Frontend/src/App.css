@@ -1,0 +1,40 @@
+/* Flexbox container for the two-column layout */
+.app-container {
+  display: flex;
+  height: 100vh; /* Full height of the viewport */
+ /* Optional background color */
+  padding: 20px;
+  background-color: #e3f2fd;
+}
+
+/* Left side styling */
+.left-side {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  /* Optional background */
+}
+
+/* Right side styling for Sign-in card */
+.right-side {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+ 
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-container {
+    flex-direction: column; /* Stack vertically on smaller screens */
+  }
+
+  .left-side, .right-side {
+    width: 100%;
+    flex: none;
+  }
+}
